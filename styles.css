@@ -1,0 +1,131 @@
+:root {
+  --bg: #000000;
+  --fg: #f1f1eb;
+  --muted: #bdbdb6;
+  --soft: #8a8a83;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Courier Prime", Courier, monospace;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  padding: 5.5rem 1.75rem 4rem;
+}
+
+.title-block {
+  text-align: center;
+  margin: 0 0 4.75rem;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-indent: 0.26em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.cast-block {
+  margin: 0 0 4rem;
+}
+
+.cast-block h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.cast-list p {
+  margin: 0.22rem 0;
+}
+
+.play-text {
+  max-width: 42rem;
+}
+
+.speaker {
+  margin: 1.7rem 0 0.25rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.line,
+.stage {
+  margin: 0;
+}
+
+.line {
+  line-height: 1.62;
+}
+
+.stage {
+  margin: 1.15rem 0;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.58;
+}
+
+.footer {
+  padding-top: 4.75rem;
+}
+
+.signature {
+  color: var(--soft);
+  text-decoration: none;
+  letter-spacing: 0.34em;
+  text-indent: 0.34em;
+  font-size: 0.88rem;
+}
+
+.signature:hover,
+.signature:focus-visible {
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 17px;
+  }
+
+  .page {
+    padding: 4rem 1.2rem 3rem;
+  }
+
+  .title-block {
+    margin-bottom: 3.5rem;
+  }
+
+  .cast-block {
+    margin-bottom: 3.25rem;
+  }
+
+  .speaker {
+    margin-top: 1.45rem;
+  }
+}
