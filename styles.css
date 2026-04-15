@@ -43,6 +43,10 @@ body {
   line-height: 1.15;
 }
 
+.title-block h1 .the-word {
+  margin-right: 0.18em;
+}
+
 .subtitle {
   margin: 1rem 0 0;
   color: var(--muted);
